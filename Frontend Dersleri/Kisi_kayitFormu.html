@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kişi Kayıt Formu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f60000;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    form h2 {
+      text-align: center;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    form button {
+      background-color: #20ea26;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Kişi Kayıt Formu</h2>
+    <label for="name">Ad Soyad:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Telefon:</label>
+    <input type="text" id="phone" name="phone" required>
+    
+    <label for="country">Ülke:</label>
+    <select id="country" name="country" required>
+      <option value="">Seçiniz</option>
+      <option value="turkey">Türkiye</option>
+      <option value="usa">ABD</option>
+      <option value="uk">İngiltere</option>
+      <option value="germany">Almanya</option>
+    </select>
+    
+    <button type="submit">Kaydet</button>
+  </form>
+</body>
+</html>
